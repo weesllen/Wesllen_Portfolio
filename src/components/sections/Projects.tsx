@@ -61,9 +61,11 @@ export function Projects() {
 
                 {/* Card Content */}
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:via-cyan-400 group-hover:to-blue-400 transition-all">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:via-cyan-400 group-hover:to-blue-400 transition-all">
+                    {t(`projects.items.${project.translationKey}.title`, { defaultValue: project.title })}
+                  </h3>
                   <p className="text-sm text-white/60 mb-4 flex-1 line-clamp-2 text-justify">
-                    {project.subtitle}
+                    {t(`projects.items.${project.translationKey}.subtitle`, { defaultValue: project.subtitle })}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.techs.slice(0, 3).map((tech) => (
@@ -172,14 +174,18 @@ export function Projects() {
 
               {/* Right Side: Details */}
               <div className="w-full lg:w-[40%] p-6 lg:p-10 flex flex-col overflow-y-auto bg-[#0a0a0a] border-l border-white/10">
-                <h3 className="text-3xl font-bold text-white mb-2">{selectedProject.title}</h3>
-                <p className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 font-medium mb-6">{selectedProject.subtitle}</p>
+                <h3 className="text-3xl font-bold text-white mb-2">
+                  {t(`projects.items.${selectedProject.translationKey}.title`, { defaultValue: selectedProject.title })}
+                </h3>
+                <p className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 font-medium mb-6">
+                  {t(`projects.items.${selectedProject.translationKey}.subtitle`, { defaultValue: selectedProject.subtitle })}
+                </p>
 
                 <div className="space-y-6 flex-1">
                   <div>
                     <h4 className="text-sm font-semibold text-white/80 uppercase tracking-wider mb-3">{t("projects.about")}</h4>
                     <p className="text-white/60 leading-relaxed text-sm lg:text-base text-justify">
-                      {selectedProject.description}
+                      {t(`projects.items.${selectedProject.translationKey}.description`, { defaultValue: selectedProject.description })}
                     </p>
                   </div>
 
