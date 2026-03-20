@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# Portfolio - Wesllen Correia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um portfólio profissional moderno e dinâmico, desenvolvido com tecnologias de ponta para destacar projetos e habilidades como Desenvolvedor Full Stack.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** [React 19](https://react.dev/)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite](https://vite.dev/)
+- **Estilização:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animações:** [Framer Motion](https://www.framer.com/motion/) & [tsparticles](https://particles.js.org/)
+- **Iconografia:** [Lucide React](https://lucide.dev/)
+- **Internacionalização:** [i18next](https://www.i18next.com/)
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Design Premium:** Interface moderna com suporte a dark mode, gradientes e microinterações.
+- **Seção de Projetos Dinâmica:** Organização de projetos em um grid responsivo, com modal de detalhes e galeria de imagens.
+- **Internacionalização (i18n):** Suporte multiplataforma para diferentes idiomas (PT/EN).
+- **Hero Interativo:** Banner principal com animações de partículas e tipografia moderna.
+- **Responsividade:** Totalmente adaptado para dispositivos móveis, tablets e desktops.
 
-## Expanding the ESLint configuration
+## 📂 Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── components/       # Componentes reutilizáveis (UI, Layout)
+│   └── sections/     # Seções principais da Landing Page (Hero, Projects, etc.)
+├── data/             # Dados externalizados (Projetos, Stacks)
+├── i18n/             # Configurações de tradução
+├── assets/           # Imagens e recursos estáticos
+└── App.tsx           # Componente principal
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Como Executar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este projeto utiliza o gerenciador de pacotes **pnpm**.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Instalar dependências:**
+   ```bash
+   pnpm install
+   ```
+
+2. **Iniciar servidor de desenvolvimento:**
+   ```bash
+   pnpm dev
+   ```
+
+3. **Gerar build de produção:**
+   ```bash
+   pnpm build
+   ```
+
+---
+
+> [!IMPORTANT]
+> Para futuras expansões de projetos, os dados devem ser atualizados em `src/data/projects.ts` para manter o código limpo e organizado.

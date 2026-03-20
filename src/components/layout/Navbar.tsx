@@ -1,16 +1,19 @@
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
-const navLinks = [
-  { name: "Início", to: "hero" },
-  { name: "Quem sou", to: "about" },
-  { name: "Habilidades", to: "stacks" },
-  { name: "Projetos", to: "projects" },
-  { name: "Contatos", to: "contact" },
+const navKeys = [
+  { key: "nav.home", to: "hero" },
+  { key: "nav.about", to: "about" },
+  { key: "nav.skills", to: "stacks" },
+  { key: "nav.projects", to: "projects" },
+  { key: "nav.contact", to: "contact" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { t, i18n } = useTranslation();
+  const [lang, setLang] = useState(i18n.language || "pt");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,16 +23,23 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleLang = () => {
+    const next = lang === "pt" ? "en" : "pt";
+    i18n.changeLanguage(next);
+    localStorage.setItem("lang", next);
+    setLang(next);
+  };
+
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md border-b border-white/10" : "bg-transparent"
         }`}
     >
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3 text-2xl font-bold tracking-tighter text-gradient-green">
-          <img 
-            src="/logo_w.png" 
-            alt="Logo Wesllen" 
+        <a href="#" className="flex items-center gap-3 text-2xl font-bold tracking-tighter text-gradient-brand opacity-90 hover:opacity-100 transition-opacity">
+          <img
+            src="/logo_w.png"
+            alt="Logo Wesllen"
             className="w-20 h-20 object-contain -ml-4"
           />
           <div>
@@ -38,7 +48,7 @@ export function Navbar() {
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {navKeys.map((link) => (
             <Link
               key={link.to}
               to={link.to}
@@ -46,17 +56,23 @@ export function Navbar() {
               smooth={true}
               offset={-80}
               duration={500}
-              className="text-base font-bold text-white/70 hover:text-white hover:text-gradient-green cursor-pointer transition-colors"
-              activeClass="text-gradient-green font-extrabold"
+              className="relative text-base font-bold text-white/70 hover:text-white cursor-pointer transition-all duration-300 px-1 py-2 group/link"
+              activeClass="!text-cyan-400 font-extrabold is-active"
             >
-              {link.name}
+              {t(link.key)}
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 scale-x-0 transition-transform duration-300 origin-left group-hover/link:scale-x-100 group-[.is-active]/link:scale-x-100" />
             </Link>
           ))}
         </nav>
 
-        {/* Mobile menu could go here, but keeping it simple for now */}
-        <button className="md:hidden text-white/70">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
+        {/* Language Toggle */}
+        <button
+          onClick={toggleLang}
+          className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:border-cyan-500/40 transition-all text-sm font-bold text-white/70 hover:text-white"
+          title="Trocar idioma / Switch language"
+        >
+          <span className="text-base leading-none">{lang === "pt" ? "🇧🇷" : "🇺🇸"}</span>
+          <span className="tracking-widest">{lang === "pt" ? "PT" : "EN"}</span>
         </button>
       </div>
     </header>

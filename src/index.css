@@ -6,6 +6,12 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  /* Green-to-Blue gradient palette */
+  --color-brand-start: #10b981;
+  --color-brand-mid: #06b6d4;
+  --color-brand-end: #3b82f6;
+
+  /* Legacy aliases */
   --color-green-gradient-start: #10b981;
   --color-green-gradient-end: #047857;
 }
@@ -18,19 +24,19 @@
     --card-foreground: 0 0% 100%;
     --popover: 0 0% 3%;
     --popover-foreground: 0 0% 100%;
-    --primary: 152 69% 31%;
+    --primary: 173 80% 40%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 100%;
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 64%;
-    --accent: 0 0% 15%;
+    --accent: 210 80% 40%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 152 69% 31%;
+    --ring: 173 80% 40%;
     --radius: 0.5rem;
   }
   * {
@@ -58,6 +64,22 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Primary brand gradient: teal → cyan → blue */
+.text-gradient-brand {
+  background: linear-gradient(135deg, var(--color-brand-start), var(--color-brand-mid), var(--color-brand-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-brand {
+  background: linear-gradient(135deg, var(--color-brand-start), var(--color-brand-mid), var(--color-brand-end));
+}
+
+.border-gradient-brand {
+  border-image: linear-gradient(135deg, var(--color-brand-start), var(--color-brand-mid), var(--color-brand-end)) 1;
 }
 
 :root {

@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Quem sou",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contatos"
+  },
+  "hero": {
+    "role": "FULL STACK WEB DEVELOPER",
+    "subtitle": "Transformando ideias em aplicações web modernas, performáticas e escaláveis",
+    "cta": "Ver Projetos"
+  },
+  "about": {
+    "title": "Quem",
+    "titleHighlight": "Sou",
+    "p1_intro": "Meu nome é",
+    "p1_name": "Wesllen Correia",
+    "p1_middle": "e sou um",
+    "p1_highlight": "Desenvolvedor em formação com foco em Full-Stack",
+    "p1_rest": ". Atualmente curso Ciência da Computação e venho desenvolvendo projetos pessoais e projetos reais como freelancer, utilizando tecnologias modernas para a web.",
+    "p2": "Venho de uma transição de carreira, experiência que me permitiu adquirir uma boa base de vivência profissional, além de desenvolver habilidades comportamentais importantes para o ambiente de trabalho. Ao longo dessa trajetória, construí competências como organização, comunicação, trabalho em equipe e capacidade de adaptação, que hoje considero fundamentais na minha atuação como desenvolvedor.",
+    "p3": "Tenho familiaridade com o desenvolvimento de aplicações completas, do front-end ao back-end, sempre buscando evoluir tecnicamente e entender o impacto real das soluções que construo.",
+    "p4": "Me considero uma pessoa motivada, colaborativa e de aprendizado rápido, com facilidade para trabalhar em equipe e lidar com diferentes desafios. Estou sempre em busca de evoluir, aprender e contribuir, acreditando que a tecnologia é uma ferramenta poderosa para transformar ideias em soluções reais.",
+    "downloadCV": "Baixar CV"
+  },
+  "stacks": {
+    "title": "Minhas",
+    "titleHighlight": "Stacks",
+    "subtitle": "Principais tecnologias e ferramentas que compõem meu ecossistema de desenvolvimento.",
+    "frontend": "Front-end",
+    "backend": "Back-end & Dados",
+    "other": "Outras Tecnologias"
+  },
+  "projects": {
+    "title": "Meus",
+    "titleHighlight": "Projetos",
+    "subtitle": "Aqui estão alguns dos trabalhos recentes que desenvolvi para aprimorar minhas habilidades. Clique nos cards para ver mais detalhes.",
+    "viewDetails": "Ver Detalhes",
+    "about": "Sobre o Projeto",
+    "techs": "Tecnologias Utilizadas",
+    "access": "Acessar o Projeto"
+  },
+  "contact": {
+    "title": "Vamos",
+    "titleHighlight": "Trabalhar Juntos?",
+    "subtitle": "Estou sempre aberto a novas oportunidades e desafios. Se você tem um projeto em mente ou apenas quer dizer um olá, sinta-se à vontade para me contatar.",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "email": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "message": "Mensagem",
+    "messagePlaceholder": "Como posso ajudar?",
+    "send": "Enviar Mensagem"
+  },
+  "footer": {
+    "tagline": "Transformando ideias em aplicações web modernas, performáticas e escaláveis",
+    "available": "Disponível para novos projetos",
+    "location": "Bahia, Brasil",
+    "rights": "Todos os direitos reservados."
+  }
+}
