@@ -24,20 +24,17 @@ export function Hero() {
         init={particlesInit}
         options={{
           background: { color: { value: "transparent" } },
-          fpsLimit: 120,
+          fpsLimit: 60,
           interactivity: {
             events: {
-              onHover: { enable: true, mode: "grab" },
-            },
-            modes: {
-              grab: { distance: 150, links: { opacity: 0.8 } },
+              onHover: { enable: false },
             },
           },
           particles: {
             color: { value: ["#10b981", "#06b6d4", "#3b82f6"] },
             links: { color: "#06b6d4", distance: 150, enable: true, opacity: 0.3, width: 1 },
-            move: { enable: true, speed: 1.5, direction: "none", outModes: "out" },
-            number: { density: { enable: true, area: 800 }, value: 60 },
+            move: { enable: true, speed: 1, direction: "none", outModes: "out" },
+            number: { density: { enable: true, area: 800 }, value: 30 },
             opacity: { value: 0.5 },
             shape: { type: "circle" },
             size: { value: { min: 1, max: 3 } },
@@ -132,6 +129,7 @@ export function Hero() {
           <img
             src="/minimal_avatar_custom.png"
             alt="Custom minimalist dark tech avatar"
+            fetchPriority="high"
             className="w-[98%] max-w-[520px] aspect-square object-cover shadow-[0_0_40px_rgba(0,0,0,0.8)] relative z-10 border-[6px] border-[#0a0a0a]/80 bg-background/50 backdrop-blur-sm p-1 transition-all duration-500"
             style={{ borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%" }}
           />

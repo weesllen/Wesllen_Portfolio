@@ -55,6 +55,7 @@ export function Projects() {
                   <img
                     src={project.images[0]}
                     alt={project.title}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -120,6 +121,7 @@ export function Projects() {
                     key={currentImageIndex}
                     src={selectedProject.images[currentImageIndex]}
                     alt={`${selectedProject.title} imagem ${currentImageIndex + 1}`}
+                    loading="lazy"
                     className="w-full h-full object-contain absolute inset-0 p-4"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

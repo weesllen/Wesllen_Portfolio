@@ -14,14 +14,13 @@
   "about": {
     "title": "Quem",
     "titleHighlight": "Sou",
-    "p1_intro": "Meu nome é",
+    "p1_intro": "Sou",
     "p1_name": "Wesllen Correia",
-    "p1_middle": "e sou um",
-    "p1_highlight": "Desenvolvedor em formação com foco em Full-Stack",
-    "p1_rest": ". Atualmente curso Ciência da Computação e venho desenvolvendo projetos pessoais e projetos reais como freelancer, utilizando tecnologias modernas para a web.",
-    "p2": "Venho de uma transição de carreira, experiência que me permitiu adquirir uma boa base de vivência profissional, além de desenvolver habilidades comportamentais importantes para o ambiente de trabalho. Ao longo dessa trajetória, construí competências como organização, comunicação, trabalho em equipe e capacidade de adaptação, que hoje considero fundamentais na minha atuação como desenvolvedor.",
-    "p3": "Tenho familiaridade com o desenvolvimento de aplicações completas, do front-end ao back-end, sempre buscando evoluir tecnicamente e entender o impacto real das soluções que construo.",
-    "p4": "Me considero uma pessoa motivada, colaborativa e de aprendizado rápido, com facilidade para trabalhar em equipe e lidar com diferentes desafios. Estou sempre em busca de evoluir, aprender e contribuir, acreditando que a tecnologia é uma ferramenta poderosa para transformar ideias em soluções reais.",
+    "p1_middle": ", desenvolvedor Full-Stack em formação pela UNIFACS. Trabalho com React, Next.js, TypeScript, Java Spring Boot e Python, construindo aplicações completas do",
+    "p1_highlight": "front-end ao back-end",
+    "p1_rest": ".",
+    "p2": "Como freelancer, já entreguei projetos reais: plataformas de captação de leads com foco em conversão, sistemas de simulados com dados em tempo real e sites institucionais com CMS dinâmico sempre integrando automações com n8n e soluções com Inteligência Artificial para otimizar processos e experiência do usuário.",
+    "p3": "Além do técnico, valorizo muito o lado humano do desenvolvimento. Tenho boa comunicação, gosto de trabalhar em equipe e sei ouvir feedbacks para evoluir junto com o time. Sou organizado, me adapto rápido a novos contextos e encaro cada desafio como oportunidade de aprendizado. Acredito que um bom desenvolvedor não é só quem escreve bom código, mas quem colabora bem e entrega com responsabilidade.",
     "downloadCV": "Baixar CV"
   },
   "stacks": {

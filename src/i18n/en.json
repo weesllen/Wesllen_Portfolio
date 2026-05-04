@@ -14,14 +14,13 @@
   "about": {
     "title": "About",
     "titleHighlight": "Me",
-    "p1_intro": "My name is",
+    "p1_intro": "I am",
     "p1_name": "Wesllen Correia",
-    "p1_middle": "and I am a",
-    "p1_highlight": "Full-Stack focused Developer in training",
-    "p1_rest": ". I am currently pursuing a Computer Science degree and have been building personal and real-world freelance projects using modern web technologies.",
-    "p2": "I come from a career transition, an experience that gave me a solid professional background and helped me develop important soft skills. Throughout this journey, I built competencies such as organization, communication, teamwork and adaptability — all of which I consider fundamental in my work as a developer.",
-    "p3": "I am comfortable building full-stack applications from front-end to back-end, always seeking to grow technically and understand the real impact of the solutions I create.",
-    "p4": "I consider myself a motivated, collaborative and fast-learning person, comfortable working in teams and handling diverse challenges. I am always looking to evolve, learn and contribute, believing that technology is a powerful tool to turn ideas into real solutions.",
+    "p1_middle": ", a Full-Stack developer in training at UNIFACS. I work with React, Next.js, TypeScript, Java Spring Boot and Python, building complete applications from the",
+    "p1_highlight": "front-end to back-end",
+    "p1_rest": ".",
+    "p2": "As a freelancer, I have already delivered real projects: lead generation platforms focused on conversion, mock exam systems with real-time data, and institutional websites with a dynamic CMS — always integrating n8n automations and Artificial Intelligence solutions to optimize processes and user experience.",
+    "p3": "Beyond the technical side, I value the human aspect of development greatly. I communicate well, enjoy teamwork, and know how to take feedback to grow alongside the team. I am organized, adapt quickly to new contexts, and see every challenge as a learning opportunity. I believe a good developer is not only someone who writes good code, but someone who collaborates well and delivers responsibly.",
     "downloadCV": "Download CV"
   },
   "stacks": {
