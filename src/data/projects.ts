@@ -18,7 +18,7 @@ export const projects: Project[] = [
     description: "Desenvolvimento de uma plataforma de simulados voltada para preparação da CNH, com foco na conversão de leads e experiência do usuário. A aplicação oferece simulados por categoria, questões com imagens, feedbacks personalizados, diagnóstico de desempenho e dashboard de evolução. Conta ainda com conteúdos em vídeo e elementos motivacionais, tudo em uma interface leve, dinâmica e intuitiva. A liberação do plano ocorre automaticamente após a confirmação do pagamento, garantindo uma jornada ágil e totalmente automatizada para o usuário.",
     images: ["https://aqxqxu306f.ufs.sh/f/GF3FXbjYZpCQTenxscffikGR6Am5SOxrNZ2PbEBsTWqu0IHc", "https://aqxqxu306f.ufs.sh/f/GF3FXbjYZpCQTVa0huJffikGR6Am5SOxrNZ2PbEBsTWqu0IH", "https://aqxqxu306f.ufs.sh/f/GF3FXbjYZpCQQ1eZLQlALUToqIX7YDFR9jBOmPtzugp2bc1i"],
     techs: ["Next.js", "TypeScript", "Firebase", "React", "N8N", "Tailwind"],
-    link: "https://simulados.autoagente.com.br/diagnostico"
+    link: "https://simulados.autoagente.com.br/login"
   },
   {
     id: 2,
