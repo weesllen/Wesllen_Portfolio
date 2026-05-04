@@ -1,17 +1,11 @@
-import { useCallback } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin } from "lucide-react";
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
-import type { Engine } from "tsparticles-engine";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
 
 export function Hero() {
   const { t } = useTranslation();
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
-  }, []);
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
@@ -19,30 +13,7 @@ export function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full blur-[140px] z-0"
         style={{ background: 'radial-gradient(ellipse, rgba(16,185,129,0.18) 0%, rgba(6,182,212,0.12) 50%, rgba(59,130,246,0.10) 100%)' }}
       />
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          background: { color: { value: "transparent" } },
-          fpsLimit: 60,
-          interactivity: {
-            events: {
-              onHover: { enable: false },
-            },
-          },
-          particles: {
-            color: { value: ["#10b981", "#06b6d4", "#3b82f6"] },
-            links: { color: "#06b6d4", distance: 150, enable: true, opacity: 0.3, width: 1 },
-            move: { enable: true, speed: 1, direction: "none", outModes: "out" },
-            number: { density: { enable: true, area: 800 }, value: 30 },
-            opacity: { value: 0.5 },
-            shape: { type: "circle" },
-            size: { value: { min: 1, max: 3 } },
-          },
-          detectRetina: true,
-        }}
-        className="absolute inset-0 z-0 opacity-50"
-      />
+      <ParticlesBackground className="absolute inset-0 z-0 opacity-50" />
 
       <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
         <div className="flex flex-col items-center text-center">
@@ -100,12 +71,12 @@ export function Hero() {
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/in/weesllen/" target="_blank" rel="noopener noreferrer">
                 <Button size="icon" variant="outline" className="border-cyan-500/50 text-cyan-400 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-cyan-500 hover:text-white hover:border-transparent hover:shadow-[0_0_15px_rgba(6,182,212,0.5)] transition-all duration-300 h-14 w-14 rounded-full">
-                  <Linkedin className="h-7 w-7" />
+                  <FaLinkedinIn className="h-7 w-7" />
                 </Button>
               </a>
               <a href="https://github.com/weesllen" target="_blank" rel="noopener noreferrer">
                 <Button size="icon" variant="outline" className="border-blue-500/50 text-blue-400 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white hover:border-transparent hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300 h-14 w-14 rounded-full">
-                  <Github className="h-7 w-7" />
+                  <FaGithub className="h-7 w-7" />
                 </Button>
               </a>
             </div>
@@ -127,7 +98,7 @@ export function Hero() {
           />
 
           <img
-            src="/minimal_avatar_custom.png"
+            src="/minimal_avatar_custom.webp"
             alt="Custom minimalist dark tech avatar"
             fetchPriority="high"
             className="w-[98%] max-w-[520px] aspect-square object-cover shadow-[0_0_40px_rgba(0,0,0,0.8)] relative z-10 border-[6px] border-[#0a0a0a]/80 bg-background/50 backdrop-blur-sm p-1 transition-all duration-500"

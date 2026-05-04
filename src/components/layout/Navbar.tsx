@@ -38,7 +38,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 text-2xl font-bold tracking-tighter text-gradient-brand opacity-90 hover:opacity-100 transition-opacity">
           <img
-            src="/logo_w.png"
+            src="/logo_w.webp"
             alt="Logo Wesllen"
             className="w-20 h-20 object-contain -ml-4"
           />

@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export function Footer() {
@@ -20,7 +21,7 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-start space-y-4">
             <a href="#" className="flex items-center gap-3 text-2xl font-bold tracking-tighter text-gradient-brand opacity-90 hover:opacity-100 transition-opacity">
               <img
-                src="/logo_w.png"
+                src="/logo_w.webp"
                 alt="Logo Wesllen"
                 className="w-10 h-10 object-contain -ml-2"
               />
@@ -51,7 +52,7 @@ export function Footer() {
               className="p-3 bg-white/5 rounded-full text-white/70 hover:text-cyan-400 hover:bg-cyan-400/10 transition-all border border-white/5 hover:border-cyan-400/20"
               aria-label="GitHub"
             >
-              <Github className="w-5 h-5" />
+              <FaGithub className="w-5 h-5" />
             </a>
             <a
               href="https://www.linkedin.com/in/weesllen/"
@@ -60,7 +61,7 @@ export function Footer() {
               className="p-3 bg-white/5 rounded-full text-white/70 hover:text-blue-400 hover:bg-blue-400/10 transition-all border border-white/5 hover:border-blue-400/20"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-5 h-5" />
+              <FaLinkedinIn className="w-5 h-5" />
             </a>
             <a
               href="mailto:wesllen_santtos@hotmail.com"
